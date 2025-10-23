@@ -1,0 +1,9 @@
+services:
+  frontend:
+    build:
+      context: .
+    ports:
+      - "3000:3000"
+    environment:
+      API_BASE: ${API_BASE} # ✅ IP ของ server ที่รัน api_covid http://203.113.123.197:4000 server   ${API_BASE} 
+    restart: always
